@@ -23,8 +23,8 @@ TEST(EchoTest, VeryLongWord){
 }
 
 TEST(EchoTest, BlankSpace){
-    char* test_val[4]; test_val[0] = "./c-echo"; test_val[1] = "IsThere"; test_val[2] = " "; test_val[3] = "ABlankSpace?";
-    EXPECT_EQ("IsThere   ABlankSpace?", echo(4, test_val));
+    char* test_val[4]; test_val[0] = "./c-echo"; test_val[1] = "IsThere"; test_val[2] = " "; test_val[3] = "3BlankSpaces?";
+    EXPECT_EQ("IsThere   3BlankSpaces?", echo(4, test_val));
 }
 
 int main(int argc, char **argv) {
